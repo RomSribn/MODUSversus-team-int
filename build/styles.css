@@ -812,7 +812,7 @@ nav .active{
 }
 .button{
 	font-size: 25px;
-	width: 200px;
+	max-width: 200px;
 	padding: 10px;
 	color: white;
 	text-align: center;
@@ -823,7 +823,7 @@ nav .active{
 
 .services{
 	width: auto;
-	height: 310px;
+	min-height: 310px;
 	background-color: #ffffff;
 	text-align: center;
 	padding-right: 15px;
@@ -890,7 +890,16 @@ nav .active{
 	left: -20px;
 	transform: translateY(-50%) rotate(-45deg);
 }
-
+.speedometrs canvas{
+	padding: none;
+}
+.labels p{
+	z-index: 100;
+	margin-top: -44px;
+	font-size: 15pt;
+	width: 150px;
+	text-align: center;
+}
 .speech-bubble {
 	position: relative;
 	background: #f8f8f8;
