@@ -56,7 +56,7 @@ module.exports = {
         stats: 'errors-only',
         clientLogLevel: 'warning',
         compress: true,
-        port: 5000,
+        port: 9003,
     }
 };
 

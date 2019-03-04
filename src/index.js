@@ -1,4 +1,7 @@
 import "./main.css";
+import $ from "jquery";
+import "popper.js";
+import "bootstrap";
 // import "./js/raphael-2.1.4.min.js";
 // import "./js/justgage.js";
 import { Gauge } from "./js/gauge.js";
