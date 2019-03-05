@@ -2,9 +2,16 @@ import "./main.css";
 import $ from "jquery";
 import "popper.js";
 import "bootstrap";
-// import "./js/raphael-2.1.4.min.js";
-// import "./js/justgage.js";
+// import "../images";
 import { Gauge } from "./js/gauge.js";
+
+function importAll(r) {
+    let images = {};
+    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    return images;
+}
+
+importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 
 const opts1 = {
     angle: 0, /// The span of the gauge arc
